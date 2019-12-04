@@ -6,6 +6,8 @@ Most of these assets are intended to be an quick way to manually edit attributes
 
 **Note:** I strongly recommend not to use these for any production purpose. These assets are still working-in-progress and some bugs and updates might break your projects. Please use them only for evaluation.
 
+**Note:** As I have only Indie Version, all of assets can be loaded only under Limited-Commercial license so far. I am planning to update them or maybe will publish them to Orbolt Assets Library soon.
+
 ## Nodes
 
 ### Draw Bezier SOP
