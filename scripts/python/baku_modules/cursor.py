@@ -50,7 +50,10 @@ class Cursor:
 		enablePointsSnapping = not kwargs.get('disable_points_snapping', False)
 		enableEdgeSnapping = not kwargs.get('disable_edge_snapping', False)
 
-		origin, direction, snapped = uiEvent.snappingRay()
+		snappingRay = uiEvent.snappingRay()
+ 		snapped   = snappingRay['snapped']
+ 		origin    = snappingRay['origin_point']
+ 		direction = snappingRay['direction']
 
 		if snapped:
 			# Compensate geometry-level transform

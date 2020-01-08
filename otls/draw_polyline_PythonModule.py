@@ -7,7 +7,7 @@ import json
 
 from hutil.Qt import QtGui
 from hutil.Qt.QtCore import Qt
-from lightpanel.widgets import PointingLabel
+from husdui.widgets import PointingLabel
 
 hou = hou
 
@@ -381,7 +381,7 @@ class MyState(object):
 
 		# Init Line
 		geo = node.node('./GUIDE_LINE').geometry()
-		guide = hou.Drawable(self.sceneViewer, geo, 'line')
+		guide = hou.SimpleDrawable(self.sceneViewer, geo, 'line')
 		guide.enable(True)
 		guide.show(True)
 
@@ -399,7 +399,7 @@ class MyState(object):
 		geo.addAttrib(hou.attribType.Point, 'Alpha', 0.5)
 		geo.addAttrib(hou.attribType.Global, 'gl_lit', 0)
 
-		guide = hou.Drawable(self.sceneViewer, geo, 'anchor')
+		guide = hou.SimpleDrawable(self.sceneViewer, geo, 'anchor')
 		guide.setDisplayMode(
 			hou.drawableDisplayMode.CurrentViewportMode)
 		guide.enable(True)

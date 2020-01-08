@@ -7,7 +7,7 @@ import stateutils # pylint: disable=import-error
 
 from hutil.Qt import QtGui # pylint: disable=import-error
 from hutil.Qt.QtCore import Qt # pylint: disable=import-error
-from lightpanel.widgets import PointingLabel # pylint: disable=import-error
+from husdui.widgets import PointingLabel # pylint: disable=import-error
 
 import baku_modules # pylint: disable=import-error
 reload(baku_modules)
